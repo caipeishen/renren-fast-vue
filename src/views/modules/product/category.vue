@@ -3,6 +3,7 @@
       :data="menus"
       :props="defaultProps"
       :expand-on-click-node="false"
+      :default-expanded-keys="expandedKey"
       show-checkbox
       node-key="catId"
       ref="menuTree"
@@ -37,12 +38,13 @@ export default {
   props: {},
   data() {
     return {
-      pCid: [],
       menus: [],
       defaultProps: {
-        children: "children",
-        label: "name"
-      }
+        label: "name",
+        children: "children"
+      },
+      // 默认展开
+      expandedKey:[]
     };
   },
 
