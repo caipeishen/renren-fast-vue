@@ -264,6 +264,12 @@ export default {
         this.category.catLevel = data.data.catLevel;
         this.category.sort = data.data.sort;
         this.category.showStatus = data.data.showStatus;
+        /**
+         *         parentCid: 0,
+        catLevel: 0,
+        showStatus: 1,
+        sort: 0,
+         */
       });
     },
     append(data) {
